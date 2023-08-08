@@ -5,6 +5,7 @@ from selene.core.command import js
 
 
 def test_fill_registration_form():
+    browser.open('/automation-practice-form')
     browser.element('#firstName').type("Test_Name")
     browser.element('#lastName').type("Test_LastName")
     browser.element('#userEmail').type("ak_test@test.ru")
